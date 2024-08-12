@@ -9,18 +9,22 @@
 
 header{
     background-image: url(imagenes/estanan.jpg);
-    background-position: center center;
+    background-position: center;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .container {
-    max-width: 1100px;
+     max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
+   
 }
 
 .menu {
@@ -89,19 +93,22 @@ menu {
     font-size: 55px;
     position: relative;
     animation: moverTexto 2s linear infinite;
+    max-width: 1000px;
+    margin: 0 auto;
 
 }
 
-@keyframes moverTexto {
-    10% {
-        left: 0;                /* Punto de inicio */
-    }
-    10% {
-        left: 8%;              /* Punto medio */
+@keyframes moverTexto {  
+    100% {
+        left: 35;               /* Punto de inicio */
     }
     50% {
-        left: 5;                /* Regresa al inicio */
+        left: 10%;             /* Punto medio */
     }
+    100% {
+        left: 50;                /* Regresa al inicio */
+    }
+    
 }
 
 
@@ -113,5 +120,67 @@ menu {
     text-align: right;
     font-size: 20px;
     margin-top: 30px;
+ 
 }
 
+    
+@media screen and (max-width: 1000px){
+
+    .header {
+        width: 100%;
+    }
+
+
+    .header-text h1 {
+        width: 100%;
+        
+    }
+
+    .menu .navbar ul a {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header-text p {
+        width: 100%;
+        left: 100%;
+    }
+
+
+@media screen and (max-width: 500px){
+
+
+    .header {
+        width: 100%;
+    
+    }
+
+
+    .header-text h1 {
+        width: 100%;
+        display:inline;
+        
+    }
+
+
+    .menu .navbar ul a {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header-text p {
+        width: 100%;
+        
+    }
+
+
+
+   
+}
+}
