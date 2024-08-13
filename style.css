@@ -98,19 +98,6 @@ menu {
 
 }
 
-@keyframes moverTexto {  
-    100% {
-        left: 35;               /* Punto de inicio */
-    }
-    50% {
-        left: 10%;             /* Punto medio */
-    }
-    100% {
-        left: 50;                /* Regresa al inicio */
-    }
-    
-}
-
 
 
 .header-text p {
@@ -127,7 +114,8 @@ menu {
 @media screen and (max-width: 1000px){
 
     .header {
-        width: 100%;
+        background-size: contain;       /* Ajusta la imagen para que esté completamente contenida */
+        height: 1000px;   
     }
 
 
@@ -154,8 +142,10 @@ menu {
 
 
     .header {
-        width: 100%;
-    
+        background-size: contain;       /* La imagen se ajusta para que esté completamente visible */
+        background-position:right;    /* Centra la imagen */
+        height: 100px; 
+        width: 100px;
     }
 
 
@@ -176,6 +166,7 @@ menu {
 
     .header-text p {
         width: 100%;
+        display: inline-block;
         
     }
 
